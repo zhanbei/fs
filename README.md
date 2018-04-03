@@ -1,4 +1,4 @@
-# The Object-oriented File System Wrapped as `Repository` in Go packaged as `fs`
+# Repository-based File System Wrapper
 
 <!-- > 2018-04-03T11:44:19+0800 -->
 
