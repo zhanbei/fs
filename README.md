@@ -126,7 +126,8 @@ func NewRepository(dirPath string) (*Repository, error) {
 	return NewRepositoryWithPermissions(dirPath, DefaultFilePermission, DefaultDirPermission)
 }
 
-// Create a `Repository` instance with dirPath and permissions, return error if dirPath is not exist or is not a directory.
+// Create a `Repository` instance with dirPath and permissions.
+// Error will be returned if dirPath does not exist or is not a directory.
 // @see https://www.thegeekstuff.com/2010/04/unix-file-and-directory-permissions/
 func NewRepositoryWithPermissions(dirPath string, newFilePerm, newDirPerm os.FileMode) (*Repository, error) {
 	stat, err := os.Stat(dirPath)
